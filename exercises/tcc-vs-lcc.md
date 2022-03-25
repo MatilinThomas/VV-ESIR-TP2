@@ -6,7 +6,7 @@ Explain under which circumstances *Tight Class Cohesion* (TCC) and *Loose Class 
 
 TCC and LCC produce the same value when the class has all its nodes directly connected, like in this exemple:
 
-class ExempleTCCLCC {
+`class ExempleTCCLCC {
     private int a;
     
     public ExempleTCCLCC(int a) {
@@ -20,6 +20,6 @@ class ExempleTCCLCC {
     public int addA() {
         return this.a+1;
     }
-}
+}`
 
 LCC cannot be lower than TCC because it is at minimum equal or higher as it counts indirect connections too.
