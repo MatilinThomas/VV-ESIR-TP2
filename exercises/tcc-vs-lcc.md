@@ -6,7 +6,8 @@ Explain under which circumstances *Tight Class Cohesion* (TCC) and *Loose Class 
 
 TCC and LCC produce the same value when the class has all its nodes directly connected, like in this exemple:
 
-```class ExempleTCCLCC {
+```
+class ExempleTCCLCC {
     private int a;
     
     public ExempleTCCLCC(int a) {
