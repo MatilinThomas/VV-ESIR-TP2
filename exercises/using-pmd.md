@@ -26,3 +26,10 @@ protected static void assertNotCollectionContainsAll(final Collection<?> coll, f
 ```
 
 This block doesn't do anything, as a comment already states in the catch block, so we can remove it entirely.
+
+
+For a false positive, there are a lot like this one:
+
+C:\Users\charl\WorkSpaces\MDI\commons-collections\src\test\java\org\apache\commons\collections4\trie\PatriciaTrieTest.java:68:  AvoidDuplicateLiterals: The String literal "Ammun" appears 4 times in this file; the first occurrence is on line 68
+
+It reports the number of strings with a certain contributor name, which means it only describes the number of contributions this person did. It does not need any change as it is not a bug.
