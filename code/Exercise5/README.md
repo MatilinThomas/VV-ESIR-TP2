@@ -11,5 +11,12 @@ sb.barplot(data=df, x="class",y="TCC",color="Black")
 
 The two histograms that I have created correspond to the TCC values of the *common-collection* repository and the *common-lang* repository.
 
-![This is an image](https://github.com/MatilinThomas/VV-ESIR-TP2/edit/main/code/Exercise5/commonCollectionHistogram.png)
+Along with the creation of the two histograms, I have created a folder *GraphFolder/* in the project repository.This folder contains all the .dot files corresponding to each class of the project analyzed. Each file describes the dependency graph of the class that was analyzed.
 
+With graphViz installed the graph can be seen in a svg file with the command:
+
+```
+dot -Tsvg input.dot > output.svg
+```
+
+One example of this can be seen with the test.svg file contained in the GraphFolder along with the .dot files.
