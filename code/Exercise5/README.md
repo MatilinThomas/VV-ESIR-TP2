@@ -3,7 +3,7 @@
 This project's purpose is to iterate througth another project repository and compute the Tight Class Cohesion of each class.
 
 It creates a csv file containing 3 colums : "class","package","TCC". I have used this file to create histograms using python. 
-```
+```python
 df = pd.read_csv("TCCReport.csv")
 df=df.sort_values("TCC")
 sb.barplot(data=df, x="class",y="TCC",color="Black")
@@ -15,7 +15,7 @@ Along with the creation of the two histograms, I have created a folder *GraphFol
 
 With graphViz installed the graph can be seen in a svg file with the command:
 
-```
+```Batchfile
 dot -Tsvg input.dot > output.svg
 ```
 
